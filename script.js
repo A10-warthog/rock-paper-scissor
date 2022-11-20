@@ -22,8 +22,10 @@ function getPlayerChoice() {
         return "Paper";
     else if (string_userChoice === "scissor")
         return "Scissor"
-    else    
+    else {
+        console.log("You entered " + string_userChoice + "! Please enter either Rock, Paper or Scissor");
         return getPlayerChoice();
+    }
 }
 
 function differentValues(playerChoice, computerChoice, chance) {
