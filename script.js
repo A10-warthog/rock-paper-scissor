@@ -25,7 +25,14 @@ function getPlayerChoice() {
 }
 
 function differentValues(playerChoice, computerChoice, chance) {
-    
+    if (playerChoice === "Rock" && computerChoice === "Scissor" ||
+        playerChoice === "Paper" && computerChoice === "Rock" ||
+        playerChoice === "Scissor" && computerChoice === "Paper" ) {
+    	console.log(`You Won! ${playerChoice} beats ${computerChoice} (Chance_Left : ${chance})`);
+	return "win";
+    } else {
+        console.log(`You Lost! ${computerChoice} beats ${playerChoice} (Chance_Left) : ${chance}`);
+    }
 }
 
 function playRound(playerSelection, computerSelection, chance) {
