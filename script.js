@@ -62,3 +62,5 @@ function game() {
     else 
         console.log("It's a Draw!!!");
 }
+
+game();
