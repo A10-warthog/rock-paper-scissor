@@ -9,11 +9,10 @@ function getComputerChoice() {
         
         case 2 : 
             return "Scissor";
-        
     }
 }
 
-function playerSelection() {
+function getPlayerChoice() {
     let string_userChoice = prompt("Enter your choice:").toLowerCase();
     if (string_userChoice === "rock")
         return "Rock";
@@ -24,3 +23,4 @@ function playerSelection() {
     else    
         return playerSelection();
 }
+
