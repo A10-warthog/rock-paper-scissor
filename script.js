@@ -31,7 +31,7 @@ function differentValues(playerChoice, computerChoice, chance) {
     	console.log(`You Won! ${playerChoice} beats ${computerChoice} (Chance_Left : ${chance})`);
 	return "win";
     } else {
-        console.log(`You Lost! ${computerChoice} beats ${playerChoice} (Chance_Left) : ${chance}`);
+        console.log(`You Lost! ${computerChoice} beats ${playerChoice} (Chance_Left : ${chance})`);
     }
 }
 
