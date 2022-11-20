@@ -44,5 +44,21 @@ function playRound(playerSelection, computerSelection, chance) {
 }
 
 function game() {
+    let int_win = 0, int_lose = 0, int_draw = 0;
+    for (let i = 4; i >= 0; i--) {
+        let int_result = playRound(getPlayerChoice(), getComputerChoice(), i);
+        if (int_result === "win") 
+            int_win += 1;
+        else if (int_result === "lose")
+            int_lose += 1;
+        else 
+            int_draw += 1;
+    }
 
+    if (int_win > int_lose) 
+        console.log("You Won!!!");
+    else if (int_win < int_lose)
+        console.log("You Lost!!!");
+    else 
+        console.log("It's a Draw!!!");
 }
