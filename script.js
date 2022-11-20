@@ -24,3 +24,6 @@ function getPlayerChoice() {
         return playerSelection();
 }
 
+function playRound(playerSelection, computerSelection, chance) {
+    
+}
