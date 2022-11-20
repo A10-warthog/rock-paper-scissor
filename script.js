@@ -1,3 +1,5 @@
+"use strict"
+
 function getComputerChoice() {
     const int_choice = Math.floor(Math.random() * 3);
     switch (int_choice) {
@@ -21,7 +23,7 @@ function getPlayerChoice() {
     else if (string_userChoice === "scissor")
         return "Scissor"
     else    
-        return playerSelection();
+        return getPlayerChoice();
 }
 
 function differentValues(playerChoice, computerChoice, chance) {
