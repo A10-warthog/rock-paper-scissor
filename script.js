@@ -42,3 +42,7 @@ function playRound(playerSelection, computerSelection, chance) {
     } else 
         return differentValues(playerSelection, computerSelection, chance);
 }
+
+function game() {
+
+}
