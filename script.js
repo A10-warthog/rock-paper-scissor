@@ -24,6 +24,10 @@ function getPlayerChoice() {
         return playerSelection();
 }
 
+function differentValues(playerChoice, computerChoice, chance) {
+    
+}
+
 function playRound(playerSelection, computerSelection, chance) {
     if (playerSelection === computerSelection) {
         console.log(`It's a Draw! (Chance_left : ${chance})`);
