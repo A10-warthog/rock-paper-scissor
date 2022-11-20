@@ -1,19 +1,15 @@
-function getChoice() {
-    let rock = "Rock", papaer = "Paper", scissor = "Scissor";
-}
-
 function getComputerChoice() {
     const int_choice = Math.floor(Math.random() * 3);
     switch (int_choice) {
-        case 1 : {
+        case 0 : 
             return "Rock";
-        }
-        case 2 : {
+        
+        case 1 : 
             return "Paper";
-        }
-        case 3 : {
+        
+        case 2 : 
             return "Scissor";
-        }
+        
     }
 }
 
