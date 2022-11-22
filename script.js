@@ -1,6 +1,5 @@
 "use strict"
 
-
 const button = document.querySelectorAll("button");
 
 function getComputerChoice() {
@@ -18,17 +17,12 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    let string_userChoice = prompt("Enter your choice:").toLowerCase();
     if (string_userChoice === "rock")
         return "Rock";
     else if (string_userChoice === "paper")
         return "Paper";
     else if (string_userChoice === "scissor")
         return "Scissor"
-    else {
-        alert("You entered " + string_userChoice + "! Please enter either Rock, Paper or Scissor");
-        return getPlayerChoice();
-    }
 }
 
 function differentValues(playerChoice, computerChoice, chance) {
