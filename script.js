@@ -1,5 +1,8 @@
 "use strict"
 
+
+const button = document.querySelectorAll("button");
+
 function getComputerChoice() {
     const int_choice = Math.floor(Math.random() * 3);
     switch (int_choice) {
