@@ -34,17 +34,15 @@ function differentValues(playerChoice, computerChoice) {
     if (playerChoice === "Rock" && computerChoice === "Scissor" ||
         playerChoice === "Paper" && computerChoice === "Rock" ||
         playerChoice === "Scissor" && computerChoice === "Paper" ) {
-    	console.log(`You Won! ${playerChoice} beats ${computerChoice}`);
-	return "win";
+    	result.textContent = (`You Won! ${playerChoice} beats ${computerChoice}`);
     } else {
-        console.log(`You Lost! ${computerChoice} beats ${playerChoice}`);
+        result.textContent = (`You Lost! ${computerChoice} beats ${playerChoice}`);
     }
 }
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-        console.log(`It's a Draw!`);
-        return "draw";
+        result.textContent = "It's a Draw!";
     } else 
         return differentValues(playerSelection, computerSelection);
 }
