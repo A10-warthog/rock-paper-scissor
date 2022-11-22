@@ -29,22 +29,22 @@ function getPlayerChoice(e) {
         playRound("Scissor", string_computerChoice);
 }
 
-function differentValues(playerChoice, computerChoice, chance) {
+function differentValues(playerChoice, computerChoice) {
     if (playerChoice === "Rock" && computerChoice === "Scissor" ||
         playerChoice === "Paper" && computerChoice === "Rock" ||
         playerChoice === "Scissor" && computerChoice === "Paper" ) {
-    	console.log(`You Won! ${playerChoice} beats ${computerChoice} (Chance_Left : ${chance})`);
+    	console.log(`You Won! ${playerChoice} beats ${computerChoice}`);
 	return "win";
     } else {
-        console.log(`You Lost! ${computerChoice} beats ${playerChoice} (Chance_Left : ${chance})`);
+        console.log(`You Lost! ${computerChoice} beats ${playerChoice}`);
     }
 }
 
-function playRound(playerSelection, computerSelection, chance) {
+function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-        console.log(`It's a Draw! (Chance_left : ${chance})`);
+        console.log(`It's a Draw!`);
         return "draw";
     } else 
-        return differentValues(playerSelection, computerSelection, chance);
+        return differentValues(playerSelection, computerSelection);
 }
 
