@@ -2,6 +2,7 @@
 
 const button = document.querySelectorAll("button");
 
+button.forEach(button => button.addEventListener("click", getPlayerChoice))
 function getComputerChoice() {
     const int_choice = Math.floor(Math.random() * 3);
     switch (int_choice) {
@@ -16,7 +17,9 @@ function getComputerChoice() {
     }
 }
 
-function getPlayerChoice() {
+function getPlayerChoice(e) {
+    const button = e.target;
+    const string_userChoice = button.textContent.toLowerCase();  
     if (string_userChoice === "rock")
         return "Rock";
     else if (string_userChoice === "paper")
@@ -45,7 +48,7 @@ function playRound(playerSelection, computerSelection, chance) {
 }
 
 function game() {
-        let int_result = playRound(getPlayerChoice(), getComputerChoice(), i);
+        let int_result = playRound(getPlayerChoice(), getComputerChoice());
 }
 
 game();
