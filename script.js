@@ -1,8 +1,9 @@
 "use strict"
 
 const button = document.querySelectorAll("button");
+const result = document.querySelector(".result");
+button.forEach(button => button.addEventListener("click", getPlayerChoice));
 
-button.forEach(button => button.addEventListener("click", getPlayerChoice))
 function getComputerChoice() {
     const int_choice = Math.floor(Math.random() * 3);
     switch (int_choice) {
