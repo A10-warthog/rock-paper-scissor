@@ -19,13 +19,14 @@ function getComputerChoice() {
 
 function getPlayerChoice(e) {
     const button = e.target;
+    const string_computerChoice = getComputerChoice(); 
     const string_userChoice = button.textContent.toLowerCase();  
     if (string_userChoice === "rock")
-        return "Rock";
+        playRound("Rock", string_computerChoice);
     else if (string_userChoice === "paper")
-        return "Paper";
+        playRound("Paper", string_computerChoice);
     else if (string_userChoice === "scissor")
-        return "Scissor"
+        playRound("Scissor", string_computerChoice);
 }
 
 function differentValues(playerChoice, computerChoice, chance) {
