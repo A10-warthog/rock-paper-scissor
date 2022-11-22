@@ -47,8 +47,3 @@ function playRound(playerSelection, computerSelection, chance) {
         return differentValues(playerSelection, computerSelection, chance);
 }
 
-function game() {
-        let int_result = playRound(getPlayerChoice(), getComputerChoice());
-}
-
-game();
