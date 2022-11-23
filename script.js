@@ -50,6 +50,13 @@ function differentValues(playerChoice, computerChoice) {
     }
 }
 
+function endResult() {
+    if (int_userCount === 5) 
+        finalResult.textContent = "You won the game!!";
+    else if (int_computerCount === 5)
+        finalResult.textContent = "You lost the game!!";
+}
+
 function roundScore(str) {
     if (str === "win")
         userCount.textContent = int_userCount;
@@ -62,7 +69,6 @@ function playRound(playerSelection, computerSelection) {
     
     if (playerSelection === computerSelection) 
         result.textContent = "It's a Draw!";
-    
     else 
       string_result = differentValues(playerSelection, computerSelection);
 
