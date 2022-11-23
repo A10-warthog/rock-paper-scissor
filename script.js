@@ -1,7 +1,13 @@
 "use strict"
 
+const userCount = document.querySelector(".running_count__user");
+const computerCount = document.querySelector(".running_count__computer"); 
 const button = document.querySelectorAll("button");
 const result = document.querySelector(".result");
+const finalResult = document.querySelector(".final_result");
+
+let int_userCount = 0, int_computerCount = 0;
+
 button.forEach(button => button.addEventListener("click", getPlayerChoice));
 
 function getComputerChoice() {
@@ -35,15 +41,31 @@ function differentValues(playerChoice, computerChoice) {
         playerChoice === "Paper" && computerChoice === "Rock" ||
         playerChoice === "Scissor" && computerChoice === "Paper" ) {
     	result.textContent = (`You Won! ${playerChoice} beats ${computerChoice}`);
+        int_userCount++;
+        return "win";
     } else {
         result.textContent = (`You Lost! ${computerChoice} beats ${playerChoice}`);
+        int_computerCount++;
+        return "lose";
     }
 }
 
+function roundScore(str) {
+    if (str === "win")
+        userCount.textContent = int_userCount;
+    else 
+        computerCount.textContent = int_computerCount;
+}
+
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === computerSelection) {
+    let string_result = '';
+    
+    if (playerSelection === computerSelection) 
         result.textContent = "It's a Draw!";
-    } else 
-        return differentValues(playerSelection, computerSelection);
+    
+    else 
+      string_result = differentValues(playerSelection, computerSelection);
+
+    roundScore(string_result);
 }
 
