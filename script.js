@@ -55,6 +55,9 @@ function endResult() {
         finalResult.textContent = "You won the game!!";
     else 
         finalResult.textContent = "You lost the game!!";
+
+    int_userCount = 0;
+    int_computerCount = 0;
 }
 
 function roundScore(str) {
