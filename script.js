@@ -62,6 +62,9 @@ function roundScore(str) {
         userCount.textContent = int_userCount;
     else 
         computerCount.textContent = int_computerCount;
+
+    if (int_computerCount === 5 || int_userCount === 5)
+        endResult();
 }
 
 function playRound(playerSelection, computerSelection) {
