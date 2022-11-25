@@ -12,16 +12,9 @@ button.forEach(button => button.addEventListener("click", getPlayerChoice));
 
 function getComputerChoice() {
     const int_choice = Math.floor(Math.random() * 3);
-    switch (int_choice) {
-        case 0 : 
-            return "Rock";
-        
-        case 1 : 
-            return "Paper";
-        
-        case 2 : 
-            return "Scissor";
-    }
+    const string_choice = ["Rock", "Paper", "Scissor"];
+
+    return string_choice[int_choice];
 }
 
 function getPlayerChoice(e) {
@@ -58,6 +51,7 @@ function endResult() {
 
     int_userCount = 0;
     int_computerCount = 0;
+    
 }
 
 function roundScore(str) {
