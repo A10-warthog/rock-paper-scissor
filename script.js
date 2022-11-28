@@ -2,7 +2,6 @@
 
 const userCount = document.querySelector(".running_count__user");
 const computerCount = document.querySelector(".running_count__computer"); 
-const button = document.querySelectorAll("button");
 const result = document.querySelector(".result");
 const finalResult = document.querySelector(".final_result");
 
