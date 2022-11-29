@@ -1,7 +1,7 @@
 "use strict"
 
-const userCount = document.querySelector(".running_count__user");
-const computerCount = document.querySelector(".running_count__computer"); 
+const string_userCount = document.querySelector(".running_count__user");
+const string_computerCount = document.querySelector(".running_count__computer"); 
 const result = document.querySelector(".result");
 const userChoice = document.querySelector(".user_option").children;
 
@@ -55,9 +55,9 @@ function endResult() {
 
 function roundScore(str) {
     if (str === "win")
-        userCount.textContent = int_userCount;
+        string_userCount.textContent = int_userCount;
     else 
-        computerCount.textContent = int_computerCount;
+        string_computerCount.textContent = int_computerCount;
 
     if (int_computerCount === 5 || int_userCount === 5)
         endResult();
