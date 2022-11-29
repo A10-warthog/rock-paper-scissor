@@ -44,9 +44,9 @@ function differentValues(playerChoice, computerChoice) {
 
 function endResult() {
     if (int_userCount === 5) 
-        finalResult.textContent = "You won the game!!";
+        result.textContent = "You won the game!!";
     else 
-        finalResult.textContent = "You lost the game!!";
+        result.textContent = "You lost the game!!";
 
     int_userCount = 0;
     int_computerCount = 0;
