@@ -3,7 +3,7 @@
 const userCount = document.querySelector(".running_count__user");
 const computerCount = document.querySelector(".running_count__computer"); 
 const result = document.querySelector(".result");
-const finalResult = document.querySelector(".final_result");
+const userChoice = document.querySelector(".user_option").children;
 
 let int_userCount = 0, int_computerCount = 0;
 
