@@ -1,7 +1,8 @@
 "use strict"
 
-const string_userCount = document.querySelector(".running_count__user");
-const string_computerCount = document.querySelector(".running_count__computer"); 
+ 
+const string_userCount = document.querySelector(".run_count__user");
+const string_computerCount = document.querySelector(".run_count__computer"); 
 const result = document.querySelector(".result");
 const userChoice = document.querySelector(".user_option").children;
 
