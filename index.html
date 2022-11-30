@@ -7,27 +7,28 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="game_container"></div>
-        <div class="user_option">
-            <div class="user_option__rock">
-                <img src="img/rock-left.png" alt="rock" />
-                <p>Rock</p>
+        <div class="game">
+            <div class="game_container"></div>
+            <div class="user_option">
+                <div class="user_option__rock">
+                    <img src="img/rock-left.png" alt="rock" />
+                    <p>Rock</p>
+                </div>
+                <div class="user_option__paper">
+                    <img src="img/paper-left.png" alt="paper" />
+                    <p>Paper</p>
+                </div>
+                <div class="user_option__scissor">
+                    <img src="img/scissor-left.png" alt="scissor" />
+                    <p>Scissor</p>
+                </div>
             </div>
-            <div class="user_option__paper">
-                <img src="img/paper-left.png" alt="paper" />
-                <p>Paper</p>
-            </div>
-            <div class="user_option__scissor">
-                <img src="img/scissor-left.png" alt="scissor" />
-                <p>Scissor</p>
-            </div>
+            <div class="result"></div>
+            <div class="running_count">
+                <div class="running_count__user"></div>
+                <div class="running_count__computer"></div>
+            </div>  
         </div>
-        <div class="result"></div>
-        <div class="running_count">
-            <div class="running_count__user"></div>
-            <div class="running_count__computer"></div>
-        </div>
-        <div class="final_result"></div>
         <script src="script.js"></script>
     </body>
 </html>
