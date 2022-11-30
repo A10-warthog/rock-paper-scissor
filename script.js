@@ -17,13 +17,8 @@ function getComputerChoice() {
 function getPlayerChoice(e) {
     const button = e.target;
     const string_computerChoice = getComputerChoice(); 
-    const string_userChoice = button.textContent.toLowerCase();  
-    if (string_userChoice === "rock")
-        playRound("Rock", string_computerChoice);
-    else if (string_userChoice === "paper")
-        playRound("Paper", string_computerChoice);
-    else if (string_userChoice === "scissor")
-        playRound("Scissor", string_computerChoice);
+    const string_userChoice = button.textContent;  
+    playRound(string_userChoice, string_computerChoice);
 }
 
 function differentValues(playerChoice, computerChoice) {
