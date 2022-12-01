@@ -7,6 +7,7 @@ const string_computerCount = document.querySelector(".run_count__computer");
 const result = document.querySelector(".result");
 const[...userChoice] = document.querySelector(".user_option").children;
 const play = document.querySelector(".start_game");
+const rePlay = document.querySelector(".play_again");
 
 function endResult() {
     if (int_userCount === 5) 
