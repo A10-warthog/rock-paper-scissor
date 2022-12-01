@@ -8,6 +8,13 @@ const result = document.querySelector(".result");
 const[...userChoice] = document.querySelector(".user_option").children;
 const play = document.querySelector(".start_game");
 const rePlay = document.querySelector(".play_again");
+const winChoice = {
+    win: {
+        Rock : "Scissor",
+        Paper: "Rock",
+        Scissor: "Paper",
+    },
+}
 
 function endResult() {
     if (int_userCount === 5) 
