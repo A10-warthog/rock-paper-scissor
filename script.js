@@ -18,11 +18,9 @@ const winChoice = {
 
 function endResult() {
     if (int_userCount === 5) 
-        result.textContent = "You won the game!!";
+        result.textContent = "You Won the game!!";
     else 
-        result.textContent = "You lost the game!!";
-    int_userCount = 0;
-    int_computerCount = 0;
+        result.textContent = "You Lost the game!!";
 }
 
 function roundScore(str) {
