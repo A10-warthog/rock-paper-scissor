@@ -2,8 +2,8 @@
 
 let int_userCount = 0, int_computerCount = 0;
 const run_count = document.querySelector(".run_count");
-const userCount = document.querySelector(".run_count__user");
-const computerCount = document.querySelector(".run_count__computer"); 
+const userCount = document.querySelector(".user__num");
+const computerCount = document.querySelector(".computer__num"); 
 const result = document.querySelector(".result");
 const[...userChoice] = document.querySelector(".user_option").children;
 const play = document.querySelector(".start_game");
