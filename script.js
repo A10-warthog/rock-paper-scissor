@@ -16,6 +16,12 @@ const winChoice = {
     },
 }
 
+function removeSelectEvent() {
+    userChoice.forEach(elm => {
+        elm.firstElementChild.removeEventListener("mousedown",getPlayerChoice);
+    })
+}
+
 function endResult() {
     if (int_userCount === 5) 
         result.textContent = "You Won the game!!";
