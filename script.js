@@ -1,24 +1,29 @@
 "use strict"
 
 let int_userCount = 0, int_computerCount = 0;
-
 const run_count = document.querySelector(".run_count");
 const string_userCount = document.querySelector(".run_count__user");
 const string_computerCount = document.querySelector(".run_count__computer"); 
 const result = document.querySelector(".result");
-const userChoice = document.querySelector(".user_option").children;
+const[...userChoice] = document.querySelector(".user_option").children;
 
-function getComputerChoice() {
-    const int_choice = Math.floor(Math.random() * 3);
-    const string_choice = ["Rock", "Paper", "Scissor"];
-    return string_choice[int_choice];
+function endResult() {
+    if (int_userCount === 5) 
+        result.textContent = "You won the game!!";
+    else 
+        result.textContent = "You lost the game!!";
+    int_userCount = 0;
+    int_computerCount = 0;
 }
 
-function getPlayerChoice(e) {
-    const button = e.target;
-    const string_computerChoice = getComputerChoice(); 
-    const string_userChoice = button.textContent;  
-    playRound(string_userChoice, string_computerChoice);
+function roundScore(str) {
+    if (str === "win")
+        string_userCount.textContent = int_userCount;
+    else 
+        string_computerCount.textContent = int_computerCount;
+
+    if (int_computerCount === 5 || int_userCount === 5)
+        endResult();
 }
 
 function differentValues(playerChoice, computerChoice) {
@@ -35,35 +40,30 @@ function differentValues(playerChoice, computerChoice) {
     }
 }
 
-function endResult() {
-    if (int_userCount === 5) 
-        result.textContent = "You won the game!!";
-    else 
-        result.textContent = "You lost the game!!";
-
-    int_userCount = 0;
-    int_computerCount = 0;
-    
-}
-
-function roundScore(str) {
-    if (str === "win")
-        string_userCount.textContent = int_userCount;
-    else 
-        string_computerCount.textContent = int_computerCount;
-
-    if (int_computerCount === 5 || int_userCount === 5)
-        endResult();
-}
-
 function playRound(playerSelection, computerSelection) {
     let string_result = '';
-    
     if (playerSelection === computerSelection) 
         result.textContent = "It's a Draw!";
     else 
       string_result = differentValues(playerSelection, computerSelection);
-
     roundScore(string_result);
 }
 
+function getComputerChoice() {
+    const int_choice = Math.floor(Math.random() * 3);
+    const string_choice = ["Rock", "Paper", "Scissor"];
+    return string_choice[int_choice];
+}
+
+function getPlayerChoice(e) {
+    const button = e.target;
+    const string_computerChoice = getComputerChoice(); 
+    const string_userChoice = button.textContent;  
+    playRound(string_userChoice, string_computerChoice);
+}
+
+function game() {
+    userChoice.forEach(elm => elm.firstElementChild.addEventListener("click",getPlayerChoice));
+}
+
+game();
