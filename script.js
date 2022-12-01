@@ -53,10 +53,15 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection)
         result.textContent = "It's a Draw!";
     else {
-        const result = "";
-        if (winChoice.win[playerSelection] === computerSelection) 
+        const string_result = "";
+        if (winChoice.win[playerSelection] === computerSelection) {
+            string_result = "win";
             result.textContent = `You Won! ${playerSelection} beats ${computerSelection}`;
-    
+        } else {
+            string_result = "lose";
+            result.textContent =  `You Lose! ${computerSelection} beats ${playerSelection}`;
+        }
+        roundScore(string_result);
     } 
 }
 
