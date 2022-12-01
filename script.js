@@ -51,7 +51,7 @@ function differentValues(playerChoice, computerChoice) {
 
 function playRound(playerSelection, computerSelection) {
     if (winChoice.win[playerSelection] === computerSelection) {
-        int_computerCount++;
+        result.textContent = `You Won! ${playerSelection} beats ${computerSelection}`;
         roundScore("win");
     }
 }
