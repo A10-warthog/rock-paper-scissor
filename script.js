@@ -63,7 +63,7 @@ function getPlayerChoice(e) {
 }
 
 function game() {
-    userChoice.forEach(elm => elm.firstElementChild.addEventListener("click",getPlayerChoice));
+    userChoice.forEach(elm => elm.firstElementChild.addEventListener("mousedown",getPlayerChoice));
 }
 
 game();
