@@ -43,11 +43,11 @@ function differentValues(playerChoice, computerChoice) {
 }
 
 function playRound(playerSelection, computerSelection) {
-    let result = '';
+    let string_result = '';
     if (playerSelection === computerSelection) 
         result.textContent = "It's a Draw!";
     else 
-      result = differentValues(playerSelection, computerSelection);
+      string_result = differentValues(playerSelection, computerSelection);
     roundScore(string_result);
 }
 
@@ -60,7 +60,7 @@ function getComputerChoice() {
 function getPlayerChoice(e) {
     const button = e.target;
     const string_computerChoice = getComputerChoice(); 
-    const string_userChoice = button.textContent;  
+    const string_userChoice = button.nextElementSibling.textContent;  
     playRound(string_userChoice, string_computerChoice);
 }
 
