@@ -19,7 +19,7 @@ const winChoice = {
 function removeSelectEvent() {
     userChoice.forEach(elm => {
         elm.firstElementChild.removeEventListener("mousedown",getPlayerChoice);
-    })
+    });
 }
 
 function endResult() {
@@ -27,6 +27,7 @@ function endResult() {
         result.textContent = "You Won the game!!";
     else 
         result.textContent = "You Lost the game!!";
+    removeSelectEvent();
 }
 
 function roundScore(str) {
@@ -72,7 +73,9 @@ function getPlayerChoice(e) {
 }
 
 function game() {
-    userChoice.forEach(elm => elm.firstElementChild.addEventListener("mousedown",getPlayerChoice));
+    userChoice.forEach(elm => {
+        elm.firstElementChild.addEventListener("mousedown",getPlayerChoice)
+    });
 }
 
 game();
