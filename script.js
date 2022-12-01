@@ -50,12 +50,10 @@ function differentValues(playerChoice, computerChoice) {
 }
 
 function playRound(playerSelection, computerSelection) {
-    let string_result = '';
-    if (playerSelection === computerSelection) 
-        result.textContent = "It's a Draw!";
-    else 
-      string_result = differentValues(playerSelection, computerSelection);
-    roundScore(string_result);
+    if (winChoice.win[playerSelection] === computerSelection) {
+        int_computerCount++;
+        roundScore("win");
+    }
 }
 
 function getComputerChoice() {
