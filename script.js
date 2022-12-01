@@ -26,10 +26,13 @@ function endResult() {
 }
 
 function roundScore(str) {
-    if (str === "win")
+    if (str === "win") {
+        int_userCount++;
         userCount.textContent = int_userCount;
-    else 
+    } else {
+        int_computerCount++;
         computerCount.textContent = int_computerCount;
+    }
 
     if (int_computerCount === 5 || int_userCount === 5)
         endResult();
