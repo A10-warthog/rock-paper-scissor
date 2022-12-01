@@ -52,9 +52,11 @@ function differentValues(playerChoice, computerChoice) {
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection)
         result.textContent = "It's a Draw!";
-    else if (winChoice.win[playerSelection] === computerSelection) {
-        result.textContent = `You Won! ${playerSelection} beats ${computerSelection}`;
-        roundScore("win");
+    else {
+        const result = "";
+        if (winChoice.win[playerSelection] === computerSelection) 
+            result.textContent = `You Won! ${playerSelection} beats ${computerSelection}`;
+    
     } 
 }
 
