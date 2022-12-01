@@ -35,25 +35,11 @@ function roundScore(str) {
         endResult();
 }
 
-function differentValues(playerChoice, computerChoice) {
-    if (playerChoice === "Rock" && computerChoice === "Scissor" ||
-        playerChoice === "Paper" && computerChoice === "Rock" ||
-        playerChoice === "Scissor" && computerChoice === "Paper" ) {
-    	result.textContent = (`You Won! ${playerChoice} beats ${computerChoice}`);
-        int_userCount++;
-        return "win";
-    } else {
-        result.textContent = (`You Lost! ${computerChoice} beats ${playerChoice}`);
-        int_computerCount++;
-        return "lose";
-    }
-}
-
 function playRound(playerSelection, computerSelection) {
+    let string_result = "";
     if (playerSelection === computerSelection)
         result.textContent = "It's a Draw!";
     else {
-        let string_result = "";
         if (winChoice.win[playerSelection] === computerSelection) {
             string_result = "win";
             result.textContent = `You Won! ${playerSelection} beats ${computerSelection}`;
