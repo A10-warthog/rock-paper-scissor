@@ -6,6 +6,7 @@ const string_userCount = document.querySelector(".run_count__user");
 const string_computerCount = document.querySelector(".run_count__computer"); 
 const result = document.querySelector(".result");
 const[...userChoice] = document.querySelector(".user_option").children;
+const play = document.querySelector(".start_game");
 
 function endResult() {
     if (int_userCount === 5) 
