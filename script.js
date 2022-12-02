@@ -42,11 +42,7 @@ function displayFinalResult(element) {
         element.textContent = "You Lost the game!";
 }
 function endResult() {
-    if (int_userCount === 5) 
-        result.textContent = "You Won the game!!";
-    else 
-        result.textContent = "You Lost the game!!";
-    removeSelectEvent();
+   
 }
 
 function roundScore(str) {
