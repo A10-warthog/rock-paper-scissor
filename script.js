@@ -35,7 +35,7 @@ function removeSelectEvent(element, event, func) {
     element.forEach(elm => elm.removeEventListener(event, func));
 }
 
-function revertBackValues() {
+function revertBackValue() {
 
 }
 
