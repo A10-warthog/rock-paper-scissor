@@ -56,20 +56,7 @@ function roundScore(str) {
         endResult();
 }
 
-function playRound(playerSelection, computerSelection) {
-    let string_result = "";
-    if (playerSelection === computerSelection)
-        result.textContent = "It's a Draw!";
-    else {
-        if (winChoice.win[playerSelection] === computerSelection) {
-            string_result = "win";
-            result.textContent = `You Won! ${playerSelection} beats ${computerSelection}`;
-        } else {
-            string_result = "lose";
-            result.textContent =  `You Lose! ${computerSelection} beats ${playerSelection}`;
-        }
-        roundScore(string_result);
-    } 
+function playRound() {
 }
 
 function displayResult(str, user, comp, element) {
