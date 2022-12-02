@@ -78,12 +78,9 @@ function getComputerChoice() {
     return string_choice[int_choice];
 }
 
-function getPlayerChoice(e) {
-    const button = e.target;
-    const string_computerChoice = getComputerChoice(); 
-    const string_userChoice = button.nextElementSibling.textContent;  
-    playRound(string_userChoice, string_computerChoice);
-}
+function getPlayerChoice(img) {
+    const string_userChoice = img.nextElementSibling.textContent;  
+    return string_userChoice;
 
 function game() {
     userChoice.forEach(elm => {
