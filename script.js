@@ -31,10 +31,8 @@ function addSelectEvent(element, event, func) {
     element.forEach(elm => elm.addEventListener(event, func));
 }
 
-function removeSelectEvent() {
-    userChoice.forEach(elm => {
-        elm.firstElementChild.removeEventListener("mousedown",getPlayerChoice);
-    });
+function removeSelectEvent(element, event, func) {
+    element.forEach(elm => elm.removeEventListener(event, func));
 }
 
 function endResult() {
