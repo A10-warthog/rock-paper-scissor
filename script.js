@@ -72,6 +72,10 @@ function playRound(playerSelection, computerSelection) {
     } 
 }
 
+function displayResult(str, user, comp) {
+
+}
+
 function getResult(userInput, compInput) {
     if (userInput === compInput)
         return "draw";
