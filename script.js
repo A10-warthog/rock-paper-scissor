@@ -61,6 +61,7 @@ function playRound(string_element) {
     const compInput = getComputerChoice();
     const string_roundResult = getResult(userInput, compInput);
     displayResult(string_roundResult, userInput, compInput, result);
+    roundScore(string_roundResult);
 }
 
 function displayResult(str, user, comp, element) {
