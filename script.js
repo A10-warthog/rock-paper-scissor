@@ -59,6 +59,8 @@ function playRound(string_element) {
     const string_roundResult = getResult(userInput, compInput);
     displayResult(string_roundResult, userInput, compInput, result);
     roundScore(string_roundResult);
+    if (int_computerCount === 5 || int_userCount === 5)
+        endResult();
 }
 
 function displayResult(str, user, comp, element) {
