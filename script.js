@@ -72,8 +72,8 @@ function playRound(playerSelection, computerSelection) {
     } 
 }
 
-function displayResult(str, user, comp) {
-
+function displayResult(str, user, comp, element) {
+    
 }
 
 function getResult(userInput, compInput) {
