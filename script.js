@@ -35,6 +35,9 @@ function removeSelectEvent(element, event, func) {
     element.forEach(elm => elm.removeEventListener(event, func));
 }
 
+function displayFinalResult(element) {
+
+}
 function endResult() {
     if (int_userCount === 5) 
         result.textContent = "You Won the game!!";
