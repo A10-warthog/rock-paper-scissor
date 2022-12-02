@@ -73,7 +73,12 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function getResult(userInput, compInput) {
-    
+    if (userInput === compInput)
+        return "draw";
+    else if (winChoice.win[userInput] === compInput)
+        return "win";
+    else 
+        return "lose";
 }
 
 function getComputerChoice() {
