@@ -35,12 +35,17 @@ function removeSelectEvent(element, event, func) {
     element.forEach(elm => elm.removeEventListener(event, func));
 }
 
+function revertBackValues() {
+
+}
+
 function displayFinalResult(element) {
     if (int_userCount === 5) 
         element.textContent = "You Won the game!";
     else    
         element.textContent = "You Lost the game!";
 }
+
 function endResult() {
    displayFinalResult(result);
 }
