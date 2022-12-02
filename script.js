@@ -4,6 +4,7 @@ let int_userCount = 0, int_computerCount = 0;
 let [...userChoice] = document.querySelector(".user_option").children;
 let [...button] = document.querySelectorAll("button");
 const [...displayNone] = document.querySelectorAll(".display--none");
+const [...compOption] = document.querySelector(".computer_option").children;
 const run_count = document.querySelector(".run_count");
 const userCount = document.querySelector(".user__num");
 const computerCount = document.querySelector(".computer__num"); 
