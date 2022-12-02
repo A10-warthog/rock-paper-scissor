@@ -36,7 +36,10 @@ function removeSelectEvent(element, event, func) {
 }
 
 function displayFinalResult(element) {
-
+    if (int_userCount === 5) 
+        element.textContent = "You Won the game!";
+    else    
+        element.textContent = "You Lost the game!";
 }
 function endResult() {
     if (int_userCount === 5) 
