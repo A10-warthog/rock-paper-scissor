@@ -72,6 +72,10 @@ function playRound(playerSelection, computerSelection) {
     } 
 }
 
+function getResult(userInput, compInput) {
+    
+}
+
 function getComputerChoice() {
     const int_randomNum = Math.floor(Math.random() * 3);
     const string_choice = ["Rock", "Paper", "Scissor"];
