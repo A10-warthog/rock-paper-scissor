@@ -73,7 +73,12 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function displayResult(str, user, comp, element) {
-    
+    if (str === "draw")
+        element.textContent = "It's a Draw!";
+    else if (str === "win")
+        element.textContent = `You Won! ${user} beats ${comp}`;
+    else 
+        element.textContent = `You Lose! ${comp} beats ${user}`;
 }
 
 function getResult(userInput, compInput) {
