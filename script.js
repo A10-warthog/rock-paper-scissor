@@ -90,8 +90,8 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice(event) {
-    const string_userChoice = event.nextElementSibling.textContent;  
-    return string_userChoice;
+    const string_userChoice = event.target.nextElementSibling.textContent;  
+    playRound(string_userChoice);
 }
 
 function game() {
