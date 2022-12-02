@@ -73,14 +73,18 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function getComputerChoice() {
-    const int_choice = Math.floor(Math.random() * 3);
+    const int_randomNum = Math.floor(Math.random() * 3);
     const string_choice = ["Rock", "Paper", "Scissor"];
-    return string_choice[int_choice];
+    const compChoice = string_choice[int_randomNum]
+    compOption[0].src = `img/${compChoice.toLowerCase()}-right.png`;
+    compOption[1].textContent = compChoice;
+    return compChoice;
 }
 
 function getPlayerChoice(img) {
     const string_userChoice = img.nextElementSibling.textContent;  
     return string_userChoice;
+}
 
 function game() {
     userChoice.forEach(elm => {
