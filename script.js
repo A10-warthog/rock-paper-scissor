@@ -89,8 +89,8 @@ function getComputerChoice() {
     return compChoice;
 }
 
-function getPlayerChoice(img) {
-    const string_userChoice = img.nextElementSibling.textContent;  
+function getPlayerChoice(event) {
+    const string_userChoice = event.nextElementSibling.textContent;  
     return string_userChoice;
 }
 
