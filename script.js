@@ -57,7 +57,7 @@ function roundScore(str) {
 }
 
 function playRound(event) {
-    const userInput = getPlayerChoice(event.target);
+    const userInput = getPlayerChoice();
     const compInput = getComputerChoice();
     const string_roundResult = getResult(userInput, compInput);
 }
