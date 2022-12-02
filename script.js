@@ -12,6 +12,7 @@ const play = document.querySelector(".start_game");
 const rePlay = document.querySelector(".play_again");
 
 userChoice = userChoice.map(child => child.firstElementChild);
+button = button.map(child => child.parentElement);
 const winChoice = {
     win: {
         Rock : "Scissor",
