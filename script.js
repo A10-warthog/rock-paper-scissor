@@ -27,6 +27,10 @@ function toggleClass(element, className) {
     element.forEach(elm => elm.classList.toggle(className));
 }
 
+function addSelectEvent(element, event, func) {
+    element.forEach(elm => elm.addEventListener(event, func));
+}
+
 function removeSelectEvent() {
     userChoice.forEach(elm => {
         elm.firstElementChild.removeEventListener("mousedown",getPlayerChoice);
