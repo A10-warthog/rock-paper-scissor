@@ -13,6 +13,8 @@ const rePlay = document.querySelector(".play_again");
 
 userChoice = userChoice.map(child => child.firstElementChild);
 button = button.map(child => child.parentElement);
+displayNone.pop();
+
 const winChoice = {
     win: {
         Rock : "Scissor",
