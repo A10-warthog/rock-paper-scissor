@@ -58,6 +58,7 @@ function roundScore(str) {
 
 function playRound(event) {
     const userInput = getPlayerChoice(event.target);
+    const compInput = getComputerChoice();
 }
 
 function displayResult(str, user, comp, element) {
