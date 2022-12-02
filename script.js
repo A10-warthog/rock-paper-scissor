@@ -42,7 +42,7 @@ function displayFinalResult(element) {
         element.textContent = "You Lost the game!";
 }
 function endResult() {
-   
+   displayFinalResult(result);
 }
 
 function roundScore(str) {
