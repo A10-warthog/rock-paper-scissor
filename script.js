@@ -56,7 +56,8 @@ function roundScore(str) {
         endResult();
 }
 
-function playRound() {
+function playRound(event) {
+    
 }
 
 function displayResult(str, user, comp, element) {
