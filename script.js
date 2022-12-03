@@ -36,7 +36,11 @@ function removeSelectEvent(element, event, func) {
 }
 
 function resetValue() {
-    
+    int_userCount = 0;
+    int_computerCount = 0;
+    userCount.textContent = '0';
+    computerCount.textContent = '0'
+    result.textContent = '';
 }
 
 function revertBackValue() {
