@@ -8,3 +8,7 @@
     flex-direction: column;
     gap: 1.5rem;
 }
+
+.result {
+    height: 2rem;
+}
