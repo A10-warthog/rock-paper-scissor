@@ -124,6 +124,7 @@ function setGamePlay() {
     toggleClass([play], "display--none");
     toggleClass(userChoice, "display--hov");
     toggleClass(displayNone, "display--none");
+    removeSelectEvent([this], "click", game);
 }
 
 game();
