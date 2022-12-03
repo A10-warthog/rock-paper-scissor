@@ -36,7 +36,7 @@ function removeSelectEvent(element, event, func) {
 }
 
 function revertBackValue() {
-
+    removeSelectEvent(userChoice, "mousedown", getPlayerChoice);
 }
 
 function displayFinalResult(element) {
