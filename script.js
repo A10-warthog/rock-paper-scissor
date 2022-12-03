@@ -37,6 +37,7 @@ function removeSelectEvent(element, event, func) {
 
 function revertBackValue() {
     removeSelectEvent(userChoice, "mousedown", getPlayerChoice);
+    toggleClass(userChoice, "display--hove");
 }
 
 function displayFinalResult(element) {
