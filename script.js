@@ -50,6 +50,7 @@ function displayFinalResult(element) {
 
 function endResult() {
    displayFinalResult(result);
+   revertBackValue();
 }
 
 function roundScore(str) {
