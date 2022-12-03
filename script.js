@@ -127,4 +127,3 @@ function setGamePlay() {
     removeSelectEvent([this], "click", game);
 }
 
-game();
