@@ -23,3 +23,7 @@
 .start_game {
     height: 8rem;
 }
+
+.start_game__btn {
+    padding: 0.3rem 1.3rem;
+}
