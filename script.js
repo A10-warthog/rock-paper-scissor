@@ -120,7 +120,7 @@ function getPlayerChoice(event) {
 }
 
 function setGamePlay() {
-    
+    addSelectEvent(userChoice, "mousedown", playRound);
 }
 
 game();
