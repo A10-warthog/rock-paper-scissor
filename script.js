@@ -41,6 +41,7 @@ function resetValue() {
     userCount.textContent = '0';
     computerCount.textContent = '0'
     result.textContent = '';
+    toggleClass(displayNone, "display--none");
 }
 
 function revertBackValue() {
