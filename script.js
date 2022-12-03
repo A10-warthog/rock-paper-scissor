@@ -119,10 +119,8 @@ function getPlayerChoice(event) {
     playRound(string_userChoice);
 }
 
-function game() {
-    userChoice.forEach(elm => {
-        elm.firstElementChild.addEventListener("mousedown",getPlayerChoice)
-    });
+function setGamePlay() {
+    
 }
 
 game();
