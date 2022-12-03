@@ -51,6 +51,7 @@ function displayFinalResult(element) {
 function endResult() {
    displayFinalResult(result);
    revertBackValue();
+   addSelectEvent([rePlay.firstElementChild], "click", resetValues);
 }
 
 function roundScore(str) {
