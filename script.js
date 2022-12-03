@@ -35,6 +35,10 @@ function removeSelectEvent(element, event, func) {
     element.forEach(elm => elm.removeEventListener(event, func));
 }
 
+function resetValue() {
+    
+}
+
 function revertBackValue() {
     removeSelectEvent(userChoice, "mousedown", getPlayerChoice);
     toggleClass(userChoice, "display--hov");
