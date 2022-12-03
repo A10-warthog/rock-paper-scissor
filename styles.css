@@ -13,6 +13,11 @@
     height: 2rem;
 }
 
+.game-container {
+    height: 8rem;
+    padding: 0.5rem auto;
+}
+
 .game_container--flex {
     display: flex;
     justify-content: center;
