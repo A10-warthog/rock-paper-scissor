@@ -125,7 +125,7 @@ function setGamePlay() {
     toggleClass([play], "display--none");
     toggleClass(userChoice, "display--hov");
     toggleClass(displayNone, "display--none");
-    removeSelectEvent([this], "click", game);
+    removeSelectEvent([this], "click", setGamePlay);
 }
 
 addSelectEvent([play.firstElementChild], "click", setGamePlay);
