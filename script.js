@@ -128,4 +128,4 @@ function setGamePlay() {
     removeSelectEvent([this], "click", game);
 }
 
-addSelectEvent([play.firstElementChild], "click", game);
+addSelectEvent([play.firstElementChild], "click", setGamePlay);
