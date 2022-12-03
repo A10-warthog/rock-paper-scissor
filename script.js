@@ -122,6 +122,8 @@ function getPlayerChoice(event) {
 function setGamePlay() {
     addSelectEvent(userChoice, "mousedown", playRound);
     toggleClass([play], "display--none");
+    toggleClass(userChoice, "display--hov");
+    toggleClass(displayNone, "display--none");
 }
 
 game();
