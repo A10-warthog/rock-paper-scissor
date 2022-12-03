@@ -45,6 +45,7 @@ function resetValue() {
     toggleClass(button, "display--none");
     compOption[0].src = `img/placeholder.png`;
     compOption[1].textContent = '';
+    removeSelectEvent([rePlay.firstElementChild], "click", resetValue);
 }
 
 function revertBackValue() {
