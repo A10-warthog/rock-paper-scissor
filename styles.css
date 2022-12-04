@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+.result__text {
+    width: 100%;
+}
+
 .game-container {
     padding: 1rem 0;
 }
