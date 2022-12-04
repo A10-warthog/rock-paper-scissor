@@ -5,6 +5,7 @@
 
 .whole_game--flex {
     display: flex;
+    flex-direction: row-reverse;
     gap: 1rem;
 }
 
@@ -93,4 +94,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.3rem;
+}
+
+.display--none {
+    display: none;
 }
