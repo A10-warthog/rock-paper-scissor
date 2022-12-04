@@ -1,5 +1,6 @@
 .game {
     width: 50%;
+    margin: auto;
 }
 
 .game--flex {
