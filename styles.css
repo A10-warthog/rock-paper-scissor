@@ -37,3 +37,7 @@
     width: 8rem;
     object-fit: contain;
 }
+
+.user_option__img--hov {
+    transition: transform 150ms ease-in-out;
+}
