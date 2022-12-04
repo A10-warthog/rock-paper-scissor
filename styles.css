@@ -51,3 +51,7 @@
     width: 8rem;
     object-fit: contain;
 }
+
+.user_option__img--txt {
+    text-align: center;
+}
