@@ -72,7 +72,7 @@ function roundScore(str) {
     if (str === "win") {
         int_userCount++;
         userCount.textContent = int_userCount;
-    } else {
+    } else if (str === "lose") {
         int_computerCount++;
         computerCount.textContent = int_computerCount;
     }
