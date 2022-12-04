@@ -78,3 +78,7 @@
     margin: 0;
     margin-top: 1rem;
 }
+
+.play_again__btn {
+    padding: 0.3rem 1.3rem;
+}
