@@ -51,7 +51,7 @@ function resetValue() {
 
 function revertBackValue() {
     removeSelectEvent(userChoice, "mousedown", getPlayerChoice);
-    toggleClass(userChoice, "display--hov");
+    toggleClass(userChoice, "user_option__img--hov");
     toggleClass([rePlay], "display--none");
 }
 
