@@ -123,7 +123,7 @@ function getPlayerChoice(event) {
 function setGamePlay() {
     addSelectEvent(userChoice, "mousedown", getPlayerChoice);
     toggleClass([play], "display--none");
-    toggleClass(userChoice, "display--hov");
+    toggleClass(userChoice, "user_option__img--hov");
     toggleClass(displayNone, "display--none");
     removeSelectEvent([this], "click", setGamePlay);
 }
