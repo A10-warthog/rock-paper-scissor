@@ -141,6 +141,10 @@
     gap: 0.3rem;
 }
 
+.run_count--txt {
+    font-size: 1rem;
+}
+
 .display--none {
     display: none;
 }
