@@ -42,6 +42,6 @@
     transition: transform 150ms ease-in-out;
 }
 
-.user_option__img__hov:hover {
+.user_option__img--hov:hover {
     transform: scale(1.05);
 }
