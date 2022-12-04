@@ -7,7 +7,7 @@ const [...displayNone] = document.querySelectorAll(".display--none");
 const [...compOption] = document.querySelector(".computer_option").children;
 const userCount = document.querySelector(".user__num");
 const computerCount = document.querySelector(".comp__num"); 
-const result = document.querySelector(".result");
+const result = document.querySelector(".result").firstElementChild;
 const play = document.querySelector(".start_game");
 const rePlay = document.querySelector(".play_again");
 
