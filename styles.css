@@ -33,6 +33,9 @@
     width: 100%;
 }
 
+.result__text--txt {
+    text-align: center;
+}
 .game-container {
     padding: 1rem 0;
 }
