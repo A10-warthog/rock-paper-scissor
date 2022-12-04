@@ -63,6 +63,10 @@
     display: block;
 }
 
+.start_game__btn--txt {
+    font-size: 1.02rem;
+}
+
 .user_option--flex {
     display: flex;
     justify-content: center;
