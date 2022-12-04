@@ -82,3 +82,8 @@
 .play_again__btn {
     padding: 0.3rem 1.3rem;
 }
+
+.run_count {
+    height: 7rem;
+    min-width: 7rem;
+}
