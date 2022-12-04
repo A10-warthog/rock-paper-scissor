@@ -121,6 +121,10 @@
     padding: 0.3rem 1.3rem;
 }
 
+.play_again__btn--txt {
+    font-size: 1.02rem;
+}
+
 .run_count {
     height: 7rem;
     min-width: 7rem;
