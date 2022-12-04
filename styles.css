@@ -55,7 +55,8 @@
 
 .start_game__btn {
     padding: 0.3rem 1.3rem;
-    display:block;
+    margin: auto;
+    display: block;
 }
 
 .user_option--flex {
