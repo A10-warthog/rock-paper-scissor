@@ -87,3 +87,9 @@
     height: 7rem;
     min-width: 7rem;
 }
+
+.run_count--flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
