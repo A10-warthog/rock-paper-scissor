@@ -2,6 +2,12 @@
     width: 50%;
     margin: auto;
 }
+
+.whole_game--flex {
+    display: flex;
+    gap: 1rem;
+}
+
 .game {
     width: 50%;
     margin: auto;
