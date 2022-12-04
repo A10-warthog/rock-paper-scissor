@@ -8,6 +8,35 @@
     </head>
     <body>
         <div class="whole_game">
+            <div class="game game--flex">
+                <div class="result"></div>
+                <div class="game_container game_container--flex">
+                    <div class="start_game">
+                        <button class="start_game__btn">Play</button>
+                    </div>
+                    <div class="user_option user_option--flex display--none">
+                        <div class="user_option__rock">
+                            <img class="user_option__img" src="img/rock-left.png" alt="rock" />
+                            <p class="user_option__p--txt">Rock</p>
+                        </div>
+                        <div class="user_option__paper">
+                            <img class="user_option__img" src="img/paper-left.png" alt="paper" />
+                            <p class="user_option__p--txt">Paper</p>
+                        </div>
+                        <div class="user_option__scissor">
+                            <img class="user_option__img" src="img/scissor-left.png" alt="scissor" />
+                            <p class="user_option__p--txt">Scissor</p>
+                        </div>
+                    </div>
+                    <div class="computer_option display--none">
+                        <img class="computer_option__img" src="img/placeholder.png" />
+                        <p class="computer_option__p--txt"></p>
+                    </div>
+                </div>
+                <div class="play_again display--none">
+                    <button class="play_again__btn">Play Again</button>
+                </div> 
+            </div>
             <div class="run_count display--none">
                 <div class="run_count__user">
                     User: <span class="user__num"></span>
@@ -15,35 +44,6 @@
                 <div class="run_count__computer">
                     Computer: <span class="comp__num"></span>
                 </div>
-            </div> 
-        </div>
-        <div class="game game--flex">
-            <div class="result"></div>
-            <div class="game_container game_container--flex">
-                <div class="start_game">
-                    <button class="start_game__btn">Play</button>
-                </div>
-                <div class="user_option user_option--flex display--none">
-                    <div class="user_option__rock">
-                        <img class="user_option__img" src="img/rock-left.png" alt="rock" />
-                        <p class="user_option__p--txt">Rock</p>
-                    </div>
-                    <div class="user_option__paper">
-                        <img class="user_option__img" src="img/paper-left.png" alt="paper" />
-                        <p class="user_option__p--txt">Paper</p>
-                    </div>
-                    <div class="user_option__scissor">
-                        <img class="user_option__img" src="img/scissor-left.png" alt="scissor" />
-                        <p class="user_option__p--txt">Scissor</p>
-                    </div>
-                </div>
-                <div class="computer_option display--none">
-                    <img class="computer_option__img" src="img/placeholder.png" />
-                    <p class="computer_option__p--txt"></p>
-                </div>
-            </div>
-            <div class="play_again display--none">
-                <button class="play_again__btn">Play Again</button>
             </div> 
         </div>
         <script src="script.js"></script>
