@@ -46,6 +46,7 @@ function resetValue() {
     compOption[0].src = `img/placeholder.png`;
     compOption[1].textContent = '';
     removeSelectEvent([rePlay.firstElementChild], "click", resetValue);
+    addSelectEvent([play.firstElementChild], "click", setGamePlay);
 }
 
 function revertBackValue() {
@@ -65,7 +66,6 @@ function endResult() {
    displayFinalResult(result);
    revertBackValue();
    addSelectEvent([rePlay.firstElementChild], "click", resetValue);
-   addSelectEvent([play.firstElementChild], "click", setGamePlay);
 }
 
 function roundScore(str) {
