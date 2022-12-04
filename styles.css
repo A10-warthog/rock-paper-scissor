@@ -41,3 +41,7 @@
 .user_option__img--hov {
     transition: transform 150ms ease-in-out;
 }
+
+.user_option__img__hov:hover {
+    transform: scale(1.05);
+}
