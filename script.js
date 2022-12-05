@@ -47,6 +47,7 @@ function resetValue() {
     compOption[0].src = `img/placeholder.png`;
     compOption[1].textContent = '';
     removeSelectEvent([rePlay.firstElementChild], "click", resetValue);
+    toggleClass([runCount], "display--hidden");
     addSelectEvent([play.firstElementChild], "click", setGamePlay);
 }
 
@@ -123,6 +124,7 @@ function getPlayerChoice(event) {
 
 function setGamePlay() {
     addSelectEvent(userChoice, "mousedown", getPlayerChoice);
+    toggleClass([runCount], "display--hidden");
     toggleClass([play], "display--none");
     toggleClass(userChoice, "user_option__img--hov");
     toggleClass(displayNone, "display--none");
