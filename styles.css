@@ -22,6 +22,10 @@
     gap: 1.5rem;
 }
 
+.h1--txt {
+    text-align: center;
+}
+
 .result {
     height: 2rem;
 }
