@@ -58,6 +58,7 @@
 }
 
 .start_game__btn {
+    width: 8rem;
     padding: 0.3rem 0;
     margin: auto;
     display: block;
