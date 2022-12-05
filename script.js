@@ -8,6 +8,7 @@ const [...compOption] = document.querySelector(".computer_option").children;
 const userCount = document.querySelector(".user__num");
 const computerCount = document.querySelector(".comp__num"); 
 const result = document.querySelector(".result").firstElementChild;
+const runCount = document.querySelector(".run_count");
 const play = document.querySelector(".start_game");
 const rePlay = document.querySelector(".play_again");
 
